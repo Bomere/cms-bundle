@@ -28,11 +28,16 @@ class CmsTwigExtension extends \Twig_Extension
         );
     }
 
-    public function menu(\Twig_Environment $twig, $menuSlug)
+    /**
+     * @param string $menuSlug Slug of the menu
+     * @param \Twig_Template $menuTemplate
+     * @return string The rendered menu
+     */
+    public function menu(\Twig_Environment $twig, $menuSlug, $menuTemplate = 'CmsBundle::menu.html.twig')
     {
         $repo = $this->em->getRepository('CmsBundle:Menu');
         $menu = $repo->findOneBySlug($menuSlug);
-        return $twig->render('CmsBundle::menu.html.twig', array('menu' => $menu));
+        return $twig->render($menuTemplate, array('menu' => $menu));
     }
 
     /**

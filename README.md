@@ -54,6 +54,9 @@ devtronic_cms_bundle:
 ```twig
 {# anything.html.twig #}
 {{ cms_menu("MENU SLUG GOES HERE") | raw }}
+
+{# or with a custom Menu Template #}
+{{ cms_menu("MENU SLUG GOES HERE", "AnyBundle:Path:menu_template.html.twig") | raw }}
 ```
 ### Templates
 #### Menu Template

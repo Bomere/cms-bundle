@@ -1,0 +1,3 @@
+v1.0.1-alpha
+- getEntityManager()-deprecation in PageController.php resolved
+- Twig-Funtion cms_menu() allows now a template for the menu (example: cms_menu('some-slug', 'AppBundle:menus:main_menu.html.twig'))

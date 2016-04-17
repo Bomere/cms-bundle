@@ -2,7 +2,6 @@
 
 namespace Devtronic\CmsBundle\Controller;
 
-use Doctrine\ORM\EntityNotFoundException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -16,12 +15,10 @@ class PageController extends Controller
      */
     public function pageAction($slug)
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('CmsBundle:Page');
 
         $page = $repo->findOneBySlug($slug);
-
-
 
         return array('page' => $page);
     }
