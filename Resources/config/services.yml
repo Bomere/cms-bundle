@@ -1,0 +1,25 @@
+services:
+    twig.cms.extension:
+        class: Devtronic\CmsBundle\Twig\CmsTwigExtension
+        public: false
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: twig.extension }
+
+    admin.cms.menu:
+        class: Devtronic\CmsBundle\Admin\MenuAdmin
+        arguments: [~, Devtronic\CmsBundle\Entity\Menu, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, translation_domain: messages, group: label.admin.group.cms_bundle, label: label.cms.admin.menu, label_translator_strategy: sonata.admin.label.strategy.underscore  }
+
+    admin.cms.menu_item:
+        class: Devtronic\CmsBundle\Admin\MenuItemAdmin
+        arguments: [~, Devtronic\CmsBundle\Entity\MenuItem, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, translation_domain: messages, group: label.admin.group.cms_bundle, label: label.cms.admin.menu_item, label_translator_strategy: sonata.admin.label.strategy.underscore  }
+
+    admin.cms.page:
+        class: Devtronic\CmsBundle\Admin\PageAdmin
+        arguments: [~, Devtronic\CmsBundle\Entity\Page, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, translation_domain: messages, group: label.admin.group.cms_bundle, label: label.cms.admin.page, label_translator_strategy: sonata.admin.label.strategy.underscore  }

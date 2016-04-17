@@ -1,0 +1,21 @@
+{
+    "name": "devtronic/cms-bundle",
+    "description": "A CMS Bundle for Symfony2",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.2",
+        "egeloen/ckeditor-bundle": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julian Finkler",
+            "email": "admin@developer-heaven.de"
+        }
+    ],
+    "minimum-stability": "dev",	
+    "autoload": {
+        "psr-4": { "Devtronic\\CmsBundle\\": "" }
+    }
+}
