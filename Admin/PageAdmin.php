@@ -3,12 +3,12 @@
 namespace Devtronic\CmsBundle\Admin;
 
 use Ivory\CKEditorBundle\Form\Type\CKEditorType;
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class PageAdmin extends Admin
+class PageAdmin extends AbstractAdmin
 {
     
 
