@@ -66,6 +66,13 @@ class Page
 
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="is_home", type="boolean")
+     */
+    private $isHome;
+
+    /**
      * Get id
      *
      * @return int
@@ -224,6 +231,30 @@ class Page
      */
     public function preUpdate() {
         $this->setUpdated(new \DateTime());
+    }
+
+    /**
+     * Set isHome
+     *
+     * @param boolean $isHome
+     *
+     * @return Page
+     */
+    public function setIsHome($isHome)
+    {
+        $this->isHome = $isHome;
+
+        return $this;
+    }
+
+    /**
+     * Get isHome
+     *
+     * @return boolean
+     */
+    public function getIsHome()
+    {
+        return $this->isHome;
     }
 
     public function __toString()

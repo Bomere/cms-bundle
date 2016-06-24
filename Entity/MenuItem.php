@@ -49,7 +49,7 @@ class MenuItem
     /**
      * @var Page
      *
-     * @ORM\OneToOne(targetEntity="Devtronic\CmsBundle\Entity\Page")
+     * @ORM\ManyToOne(targetEntity="Devtronic\CmsBundle\Entity\Page")
      */
     private $targetPage;
 

@@ -8,13 +8,14 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class MenuItemTargetType extends AbstractType
 {
+
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'choices' => array(
-                0 => 'label.cms.admin.page_intern',
-                1 => 'label.cms.admin.page_extern',
-                2 => 'label.cms.admin.page_route',
+                'label.cms.admin.page_intern' => 0,
+                'label.cms.admin.page_extern' => 1,
+                'label.cms.admin.page_route' => 2,
             ),
         ));
     }

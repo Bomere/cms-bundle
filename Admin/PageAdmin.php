@@ -27,6 +27,9 @@ class PageAdmin extends AbstractAdmin
             ->add('isPublic', null, array(
                 'label' => 'label.cms.admin.page_is_public',
             ))
+            ->add('isHome', null, array(
+                'label' => 'label.cms.admin.page_is_home',
+            ))
         ;
     }
 
@@ -47,6 +50,9 @@ class PageAdmin extends AbstractAdmin
             ))
             ->add('isPublic', null, array(
                 'label' => 'label.cms.admin.page_is_public',
+            ))
+            ->add('isHome', null, array(
+                'label' => 'label.cms.admin.page_is_home',
             ))
         ;
     }

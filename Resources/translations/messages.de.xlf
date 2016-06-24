@@ -14,6 +14,14 @@
         <source>breadcrumb.link_page_list</source>
         <target>Seiten</target>
       </trans-unit>
+      <trans-unit id="breadcrumb.link_menu_create">
+        <source>breadcrumb.link_menu_create</source>
+        <target>Menü anlegen</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_menu_item_create">
+        <source>breadcrumb.link_menu_item_create</source>
+        <target>Menüeintrag hinzufügen</target>
+      </trans-unit>
       <trans-unit id="label.admin.group.cms_bundle">
         <source>label.admin.group.cms_bundle</source>
         <target>CMS Bundle</target>
@@ -77,6 +85,10 @@
       <trans-unit id="label.cms.admin.page_is_public">
         <source>label.cms.admin.page_is_public</source>
         <target>Ist öffentlich?</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_is_home">
+        <source>label.cms.admin.page_is_home</source>
+        <target>Ist Startseite?</target>
       </trans-unit>
       <trans-unit id="label.cms.admin.page_intern">
         <source>label.cms.admin.page_intern</source>
