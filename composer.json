@@ -1,6 +1,7 @@
 {
     "name": "devtronic/cms-bundle",
     "description": "A CMS Bundle for Symfony2",
+    "version": "1.0.2",
     "type": "symfony-bundle",
     "require": {
         "php": ">=5.3.3",
@@ -13,7 +14,7 @@
             "email": "admin@developer-heaven.de"
         }
     ],
-    "minimum-stability": "dev",	
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": { "Devtronic\\CmsBundle\\": "" }
     }

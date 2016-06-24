@@ -1,5 +1,4 @@
-# CMS Bundle for Symfony2
-#### EARLY ALPHA! --- Work in Progress!
+# CMS Bundle for Symfony2 / Symfony3
 
 ## Status
 #### Done
@@ -31,7 +30,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             // ...
-
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Devtronic\CmsBundle\CmsBundle(),
         );
         // ...
@@ -41,6 +40,19 @@ class AppKernel extends Kernel
 }
 
 ```
+Symfony >= 3.x
+``` bash
+$ php bin/console assets:install --symlink --relative
+$ php bin/console doctrine:schema:update --force
+$ php bin/console cache:clear
+```
+Symfony <= 2.8.x
+``` bash
+$ php app/console assets:install --symlink --relative
+$ php app/console doctrine:schema:update --force
+$ php app/console cache:clear
+```
+
 ## Configuration
 ```yml
 # app/config/routing.yml
@@ -53,10 +65,10 @@ devtronic_cms_bundle:
 #### Show a menu in twig-template
 ```twig
 {# anything.html.twig #}
-{{ cms_menu("MENU SLUG GOES HERE") | raw }}
+{{ cms_menu("MENU SLUG GOES HERE") }}
 
 {# or with a custom Menu Template #}
-{{ cms_menu("MENU SLUG GOES HERE", "AnyBundle:Path:menu_template.html.twig") | raw }}
+{{ cms_menu("MENU SLUG GOES HERE", "AnyBundle:Path:menu_template.html.twig") }}
 ```
 ### Templates
 #### Menu Template
@@ -116,6 +128,21 @@ devtronic_cms_bundle:
 #### Page Template
 ```twig
 {# app/Resources/CmsBundle/views/Page/page.html.twig #}
+
+{% extends "::base.html.twig" %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ page.title }}</h1>
+    {{ page.content | raw }}
+{% endblock %}
+
+```
+
+#### Index Template
+```twig
+{# app/Resources/CmsBundle/views/Page/index.html.twig #}
 
 {% extends "::base.html.twig" %}
 
