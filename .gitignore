@@ -5,3 +5,6 @@
 # PHPUnit
 /build
 /phpunit.xml
+
+# Apple
+.DS_Store
