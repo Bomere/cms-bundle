@@ -162,4 +162,4 @@ devtronic_cms_bundle:
 | Language      | Translator                                        | Status |
 | ------------- | :-----------------------------------------------: | ------:|
 | German        | [Devtronic](mailto:admin@developer-heaven.de)     |   100% |
-| English       |   ---                                             |     0% |
+| English       | [Modius22](https://github.com/Modius22)           |   100% |
