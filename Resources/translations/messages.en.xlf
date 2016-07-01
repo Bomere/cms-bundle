@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="de" >
+    <body>
+      <trans-unit id="breadcrumb.link_menu_list">
+        <source>breadcrumb.link_menu_list</source>
+        <target>Menu</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_menu_item_list">
+        <source>breadcrumb.link_menu_item_list</source>
+        <target>Menu entry</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_page_list">
+        <source>breadcrumb.link_page_list</source>
+        <target>Site</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_menu_create">
+        <source>breadcrumb.link_menu_create</source>
+        <target>Create menu</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_menu_item_create">
+        <source>breadcrumb.link_menu_item_create</source>
+        <target>Add menu entry</target>
+      </trans-unit>
+      <trans-unit id="label.admin.group.cms_bundle">
+        <source>label.admin.group.cms_bundle</source>
+        <target>CMS Bundle</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu">
+        <source>label.cms.admin.menu</source>
+        <target>Menu</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_name">
+        <source>label.cms.admin.menu_name</source>
+        <target>Menu name</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_slug">
+        <source>label.cms.admin.menu_slug</source>
+        <target>Slug</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.new_menu">
+        <source>label.cms.admin.new_menu</source>
+        <target>New menu</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item">
+        <source>label.cms.admin.menu_item</source>
+        <target>Menu entry</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_title">
+        <source>label.cms.admin.menu_item_title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_type">
+        <source>label.cms.admin.menu_item_type</source>
+        <target>Destination type</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_target_page">
+        <source>label.cms.admin.menu_item_target_page</source>
+        <target>Destination site</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_target_address">
+        <source>label.cms.admin.menu_item_target_address</source>
+        <target>Destination address</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_parent">
+        <source>label.cms.admin.menu_item_parent</source>
+        <target>Parent entry</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page">
+        <source>label.cms.admin.page</source>
+        <target>Site</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_title">
+        <source>label.cms.admin.page_title</source>
+        <target>Site title</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_slug">
+        <source>label.cms.admin.page_slug</source>
+        <target>Slug</target>
+      </trans-unit>
+      <trans-unit id="form.label_content">
+        <source>form.label_content</source>
+        <target>Site content</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_is_public">
+        <source>label.cms.admin.page_is_public</source>
+        <target>Is public?</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_is_home">
+        <source>label.cms.admin.page_is_home</source>
+        <target>Is frontpage?</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_intern">
+        <source>label.cms.admin.page_intern</source>
+        <target>Internal site</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_extern">
+        <source>label.cms.admin.page_extern</source>
+        <target>Externel site</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.page_route">
+        <source>label.cms.admin.page_route</source>
+        <target>Route</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_generic">
+        <source>label.cms.admin.menu_item_generic</source>
+        <target>Menu entry</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.menu_item_target">
+        <source>label.cms.admin.menu_item_target</source>
+        <target>Destination</target>
+      </trans-unit>
+      <trans-unit id="empty">
+        <source></source>
+        <target>-- None --</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
