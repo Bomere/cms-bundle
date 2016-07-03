@@ -39,6 +39,7 @@ class Menu
      * @var MenuItem[]
      *
      * @ORM\OneToMany(targetEntity="Devtronic\CmsBundle\Entity\MenuItem", mappedBy="menu")
+     * @ORM\OrderBy({"position" = "ASC"})
      */
     private $items;
 

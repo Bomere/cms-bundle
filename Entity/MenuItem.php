@@ -12,10 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class MenuItem
 {
-
-    CONST TYPE_INTERN = 0;
-    CONST TYPE_EXTERN = 1;
-
     /**
      * @var int
      *
@@ -71,6 +67,13 @@ class MenuItem
      * @ORM\OneToMany(targetEntity="Devtronic\CmsBundle\Entity\MenuItem", mappedBy="parentItem")
      */
     private $subItems;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="position", type="integer")
+     */
+    private $position;
 
 
     /**
@@ -266,6 +269,31 @@ class MenuItem
     public function getTargetPage()
     {
         return $this->targetPage;
+    }
+
+
+    /**
+     * Set position
+     *
+     * @param integer $position
+     *
+     * @return MenuItem
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * Get position
+     *
+     * @return integer
+     */
+    public function getPosition()
+    {
+        return $this->position;
     }
 
     public function __toString()

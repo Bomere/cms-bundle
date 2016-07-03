@@ -27,6 +27,9 @@ class MenuItemAdmin extends AbstractAdmin
                 ->add('parentItem', null, array(
                     'label' => 'label.cms.admin.menu_item_parent',
                 ))
+                ->add('position', null, array(
+                    'label' => 'label.cms.admin.position',
+                ))
                 ->end()
             ->with('label.cms.admin.menu_item_target', array('class' => 'col-md-3'))
                 ->add('type', MenuItemTargetType::class, array(

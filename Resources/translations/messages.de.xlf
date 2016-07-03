@@ -10,6 +10,10 @@
         <source>breadcrumb.link_menu_item_list</source>
         <target>Menüeinträge</target>
       </trans-unit>
+      <trans-unit id="breadcrumb.link_page_create">
+        <source>breadcrumb.link_page_create</source>
+        <target>Seite erstellen</target>
+      </trans-unit>
       <trans-unit id="breadcrumb.link_page_list">
         <source>breadcrumb.link_page_list</source>
         <target>Seiten</target>
@@ -49,6 +53,10 @@
       <trans-unit id="label.cms.admin.menu_item_title">
         <source>label.cms.admin.menu_item_title</source>
         <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="label.cms.admin.position">
+        <source>label.cms.admin.position</source>
+        <target>Sortierung</target>
       </trans-unit>
       <trans-unit id="label.cms.admin.menu_item_type">
         <source>label.cms.admin.menu_item_type</source>
