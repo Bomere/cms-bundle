@@ -2,15 +2,15 @@
 
 ## Status
 #### Done
+ - English Translation
  - German Translation
  - Show menus in Twig-Templates
  - Menu-, MenuItem-, Page-Entity
  - Sonata Admins
+ - Make menu templates more dynamic
 
 ### Open
- - English Translation
  - Multi-Language DB Content
- - Make menu templates more dynamic
  - Stuff... :)
 
 ## Installation
@@ -154,6 +154,11 @@ devtronic_cms_bundle:
 {% endblock %}
 
 ```
+
+#### FAQ
+##### How can I link to the Frontpage?
+As menuentry: Internal route to cms_index
+As Link in template: ```<a href="{{ path('cms_index') }}">Home</a>```
 
 ## How to contribute?
 > Translate the Bundle (send ``messages.LOCALE.xlf`` and your user-/name to <admin@developer-heaven.de>
