@@ -298,6 +298,6 @@ class MenuItem
 
     public function __toString()
     {
-        return $this->getTitle();
+        return strval($this->getTitle());
     }
 }
